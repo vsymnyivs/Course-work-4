@@ -34,3 +34,11 @@ class Vacancy:
         Магический метод repr
         """
         return f"{self.__class__.__name__}({self.__name, self.__page})"
+
+    @name.setter
+    def name(self, value):
+        self._name = value
+
+    @page.setter
+    def page(self, value):
+        self._page = value
